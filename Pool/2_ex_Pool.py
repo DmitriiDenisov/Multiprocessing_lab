@@ -7,6 +7,7 @@ def my_func(x):
     print(current_process().name)
     sleep(1)
     print(x ** x)
+    return x ** x
 
 
 def main():
@@ -14,6 +15,7 @@ def main():
     print(n)
     pool = mp.Pool(n)
     result = pool.map(my_func, [4, 2, 3, 5, 3, 0, -1])
+    print(result)
 
 
 if __name__ == "__main__":

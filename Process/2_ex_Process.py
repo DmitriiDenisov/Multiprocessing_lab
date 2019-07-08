@@ -1,6 +1,7 @@
 from multiprocessing import Process, current_process
 import random
 
+
 def rand_num(a: str):
     print('I got letter {}'.format(a))
     num = random.random()
