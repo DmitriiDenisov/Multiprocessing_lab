@@ -1,7 +1,6 @@
 ## Multiprocessing
 This folder contains two examples of multiprocessing work: with Memory Manager and without
 
-Order of tutorials:
 
 ### Process folder
 - `1_ex_Process.py` provides basic example how to define and run simultaneously multiple processes
