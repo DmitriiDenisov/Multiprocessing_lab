@@ -1,8 +1,5 @@
-from multiprocessing import Process, Queue, current_process
+from multiprocessing import Process, current_process
 import random
-
-
-# This example might be good for a run-and-done type of application
 
 def rand_num(a: str):
     print('I got letter {}'.format(a))
@@ -12,13 +9,10 @@ def rand_num(a: str):
 
 
 if __name__ == "__main__":
-    queue = Queue()
     list_processes = ['A', 'B', 'C', 'D', 'E']
 
+    # Just another method how to run processes via list comprehension
     processes = [Process(target=rand_num, args=(letter,)) for letter in list_processes]
 
     for p in processes:
         p.start()
-
-    for p in processes:
-        p.join()
